@@ -3,6 +3,8 @@ import './styles/App.css';
 import { ethers } from "ethers";
 import twitterLogo from './assets/twitter-logo.svg';
 import YachtNFT from './utils/YachtNFT.json'
+import { useMetaMask } from "metamask-react";
+
 
 const TWITTER_HANDLE = '_buildspace';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
@@ -143,6 +145,7 @@ const App = () => {
       <div className="container">
         <div className="header-container">
           <nav></nav>
+          
           <p className="header gradient-text">Crypto <br></br> Yacht <br></br> Club</p>
           <p className="sub-text">
           
