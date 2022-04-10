@@ -1,21 +1,24 @@
 .App {
   height: 100vh;
   background-color: #0A1F0D;
+  background: -webkit-linear-gradient(right, #f9e8ac 10%, #6290C3 80%);
+  
   overflow: scroll;
   text-align: center;
 }
 nav{
   position: fixed;
   color: #6290C3;
-  background: #ffd300;
+  /* background: #ffd300; */
+  background: -webkit-linear-gradient(left, #f9e8ac 10%, rgba(253,243,243) 80%);
   height: 100%;
-  width: 8%;
+  width: 10%;
   margin-top: -2rem;
 };
 
 .container {
   height: 100%;
-  background-color: #0d1116;
+  background: -webkit-linear-gradient(right, #0A1F0D 10%, #6290C3 80%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -56,6 +59,7 @@ nav{
   color: white;
 }
 
+
 .connect-wallet-button {
   background: -webkit-linear-gradient(left, #0A1F0D, #35aee2);
   background-size: 200% 200%;
@@ -89,6 +93,11 @@ nav{
 .twitter-logo {
   width: 35px;
   height: 35px;
+}
+.yacht{
+  width: 50%;
+  height: 30%;
+  margin: auto;
 }
 
 .footer-text {

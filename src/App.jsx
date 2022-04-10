@@ -45,7 +45,7 @@ const App = () => {
   const connectWallet = async () => {
     try {
       const { ethereum } = window;
-
+      
       if (!ethereum) {
         if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
 
@@ -54,8 +54,17 @@ const App = () => {
           
           }
       }else{
-        alert("Get MetaMask!");
-        return;
+
+        const accounts = await ethereum.request({ method: "eth_requestAccounts" });
+
+      /*
+      * Boom! This should print out public address once we authorize Metamask.
+      */
+      console.log("Connected", accounts[0]);
+      setCurrentAccount(accounts[0]); 
+
+      setupEventListener()
+        
       }
 
       /*
@@ -71,6 +80,8 @@ const App = () => {
 
       setupEventListener()
     } catch (error) {
+      alert('getmetamask');
+      
       console.log(error);
     }
   }
@@ -93,6 +104,7 @@ const App = () => {
         // If you're familiar with webhooks, it's very similar to that!
         connectedContract.on("NewYachtNFTMinted", (from, tokenId) => {
           console.log(from, tokenId.toNumber())
+          
           alert(`Hey there! We've minted your NFT and sent it to your wallet. It may be blank right now. It can take a max of 10 min to show up on OpenSea. Here's the link: https://testnets.opensea.io/assets/${CONTRACT_ADDRESS}/${tokenId.toNumber()}`)
         });
 
@@ -154,7 +166,9 @@ const App = () => {
       
       <div className="container">
         <div className="header-container">
-          <nav></nav>
+          <nav><div className="yacht"><img className="yacht" src="yacht.png" alt="" /></div>
+            
+          </nav>
           
           <p className="header gradient-text">Crypto <br></br> Yacht <br></br> Club</p>
           <p className="sub-text">
