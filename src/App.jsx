@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import './styles/App.css';
 import { ethers } from "ethers";
-import twitterLogo from './assets/twitter-logo.svg';
 import YachtNFT from './utils/YachtNFT.json'
-import { useMetaMask } from "metamask-react";
+
+
 
 
 const TWITTER_HANDLE = '_buildspace';
@@ -14,9 +14,12 @@ const TOTAL_MINT_COUNT = 50;
 const App = () => {
   const [currentAccount, setCurrentAccount] = useState("");
   
+
+  
+  
   const checkIfWalletIsConnected = async () => {
     const { ethereum } = window;
-
+    
     if (!ethereum) {
       console.log("Make sure you have metamask!");
       return;
@@ -44,6 +47,13 @@ const App = () => {
       const { ethereum } = window;
 
       if (!ethereum) {
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+
+          // open the deeplink page 
+          window.open("https://metamask.app.link/dapp/crypto-yacht-front.vercel.app/")
+          
+          }
+      }else{
         alert("Get MetaMask!");
         return;
       }
