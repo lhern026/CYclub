@@ -170,7 +170,10 @@ const App = () => {
             
           </nav>
           
-          <p className="header gradient-text">Crypto <br></br> Yacht <br></br> Club</p>
+          
+          <h1 className="header gradient-text">Crypto <br></br> Yacht <br></br> Club</h1>
+          <h1 className="header gradient-text">Crypto <br></br> Yacht <br></br> Club</h1>
+          <h1 className="header gradient-text">Crypto <br></br> Yacht <br></br> Club</h1>
           <p className="sub-text">
           
             

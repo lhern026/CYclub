@@ -72,6 +72,9 @@ nav{
   animation: gradient-animation 4s ease infinite;
   margin-right: 15px;
 }
+h1{
+  background: -webkit-linear-gradient(left, #0A1F0D, #35aee2);
+}
 
 .opensea-button {
   background-color: rgb(32, 129, 226);
