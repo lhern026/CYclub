@@ -315,7 +315,18 @@ nav{
   
   animation: sailing 45s 4s both linear infinite alternate;
 }
-
+@media only screen and (max-width: 600px) {
+  .boat {
+    
+  
+    
+    top: 106% !important;
+    
+    
+    
+  }
+  
+}
 #hull {
   
   border: solid;
