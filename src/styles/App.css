@@ -55,8 +55,340 @@ nav{
   
 
 }
+.ocean{
+ 
+}
+.sky {
+  position: absolute;
+  height: 0;
+  width: 0;
+  background: transparent;
+  border: solid;
+  border-width: 500px 338px 50px 338px;
+  border-color: darkslateblue transparent transparent transparent;
+  z-index: -2;
+  left: 50%;
+  top: 70%;
+  margin-top: -352px;
+  transform: translateX(-50%)
+}
+
+.base {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 0px;
+  width: 0px;
+  background: transparent;
+  border-style: solid;
+  border-width: 300px 200px 0 200px;
+  border-color: midnightblue transparent transparent transparent;
+}
+.waves {
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  background: transparent;
+  margin-top: -219px;
+  top: 70%;
+  left: 50%;
+  border-style: solid;
+  border-width: 50px 20px 20px 20px;
+  border-color: transparent transparent midnightblue transparent;
+  animation-name: tide;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#wave1 { 
+  animation-duration: 96s;
+  animation-delay: 0s;
+}
+
+#wave2 { 
+  animation-duration: 35s;
+  animation-delay: 2s;
+}
+
+#wave3 { 
+  animation-duration: 71s;
+  animation-delay: 3s;
+}
+
+#wave4 { 
+  animation-duration: 37s;
+  animation-delay: 4s;
+}
+
+#wave5 { 
+  animation-duration: 22s;
+  animation-delay: 5s;
+}
+
+#wave6 { 
+  animation-duration: 49s;
+  animation-delay: 6s;
+}
+
+#wave7 { 
+  animation-duration: 20s;
+  animation-delay: 1s;
+}
+
+#wave8 { 
+  animation-duration: 46s;
+  animation-delay: 7s;
+}
+
+#wave9 { 
+  animation-duration: 22s;
+  animation-delay: 3s;
+}
+
+#wave10 { 
+  animation-duration: 29s;
+  animation-delay: 4s;
+}
+
+#wave11 { 
+  animation-duration: 90s;
+  animation-delay: 2s;
+}
+
+#wave12 { 
+  animation-duration: 19s;
+  animation-delay: 0s;
+}
+
+#wave13 { 
+  animation-duration: 66s;
+  animation-delay: 6s;
+}
+
+#wave14 {
+  animation-duration: 75s;
+  animation-delay: 2s;
+}
+
+#wave15 { 
+  animation-duration: 87s;
+  animation-delay: 3s;
+}
+
+#wave16 { 
+  animation-duration: 17s;
+  animation-delay: 4s;
+}
+
+#wave17 {
+  animation-duration: 12s;
+  animation-delay: 5s;
+}
+
+#wave18 { 
+  animation-duration: 29s;
+  animation-delay: 6s;
+}
+
+#wave19 { 
+  animation-duration: 25s;
+  animation-delay: 1s;
+}
+
+#wave20 { 
+  animation-duration: 75s;
+  animation-delay: 2s;
+}
+
+#wave21 { 
+  animation-duration: 97s;
+  animation-delay: 3s;
+}
+
+#wave22 {
+  animation-duration: 57s;
+  animation-delay: 4s;
+}
+
+#wave23 { 
+  animation-duration: 12s;
+  animation-delay: 5s;
+}
+
+#wave24 { 
+  animation-duration: 19s;
+  animation-delay: 6s;
+}
+
+#wave25 { 
+  animation-duration: 55s;
+  animation-delay: 1s;
+}
+
+#wave26 { 
+  animation-duration: 55s;
+  animation-delay: 2s;
+}
+
+#wave27 { 
+  animation-duration: 16s;
+  animation-delay: 3s;
+}
+
+#wave28 { 
+  animation-duration: 17s;
+  animation-delay: 4s;
+}
+
+#wave29 { 
+  animation-duration: 112s;
+  animation-delay: 5s;
+}
+
+#wave30 { 
+  animation-duration: 89s;
+  animation-delay: 6s;
+}
 
 
+#wave31 { 
+  animation-duration: 20s;
+  animation-delay: 2s;
+}
+
+#wave32 {
+  animation-duration: 45s;
+  animation-delay: 22s;
+}
+
+#wave33 { 
+  animation-duration: 72s;
+  animation-delay: 0s;
+}
+
+#wave34 { 
+  animation-duration: 17s;
+  animation-delay: 10s;
+}
+
+#wave35 { 
+  animation-duration: 22s;
+  animation-delay: 3s;
+}
+
+#wave36 { 
+  animation-duration: 23s;
+  animation-delay: 4s;
+}
+
+#wave37 { 
+  animation-duration: 32s;
+  animation-delay: 1s;
+}
+
+#wave38 {
+  animation-duration: 15s;
+  animation-delay: 9s;
+}
+
+#wave39 { 
+  animation-duration: 16s;
+  animation-delay: 18s;
+}
+
+#wave40 { 
+  animation-duration: 14s;
+  animation-delay: 9s;
+}
+
+@keyframes tide {
+  from{transform: translateX(-200px)}   
+  to{transform: translateX(160px)}
+}
+.boat {
+  position: absolute;
+  z-index: -1;
+  top: 70%;
+  left: 50%;
+  animation: sailing 45s 4s both linear infinite alternate;
+}
+
+#hull {
+  background: transparent;
+  border: solid;
+  border-color: tomato transparent transparent transparent;
+  border-width: 20px 50px 0px 30px;
+  height: 0px;
+  width: 0px;
+  margin-top: -180px;
+  margin-left: -180px;
+}
+
+#mainsail {
+  background: transparent;
+  border: solid;
+  border-color: transparent peachpuff transparent transparent;
+  border-width: 50px 20px 0 15px;
+  margin-top: -232px;
+  margin-left: -187px;
+}
+
+#jib {
+  background: transparent;
+  border: solid;
+  border-color: transparent transparent transparent peachpuff;
+  border-width: 45px 30px 0 30px;
+  margin-top: -227px;
+  margin-left: -150px;
+}
+
+@keyframes sailing {
+  0%{transform: translateX(-0px)}
+  100%{transform: translateX(300px)}
+}
+.boat {
+  position: absolute;
+  z-index: -1;
+  top: 70%;
+  left: 50%;
+  animation: sailing 45s 4s both linear infinite alternate;
+}
+
+#hull {
+  background: transparent;
+  border: solid;
+  border-color: tomato transparent transparent transparent;
+  border-width: 20px 50px 0px 30px;
+  height: 0px;
+  width: 0px;
+  margin-top: -180px;
+  margin-left: -180px;
+}
+
+#mainsail {
+  background: transparent;
+  border: solid;
+  border-color: transparent peachpuff transparent transparent;
+  border-width: 50px 20px 0 15px;
+  margin-top: -232px;
+  margin-left: -187px;
+}
+
+#jib {
+  background: transparent;
+  border: solid;
+  border-color: transparent transparent transparent peachpuff;
+  border-width: 45px 30px 0 30px;
+  margin-top: -227px;
+  margin-left: -150px;
+}
+
+@keyframes sailing {
+  0%{transform: translateX(-0px)}
+  100%{transform: translateX(300px)}
+}
 .cta-button {
   height: 45px;
   border: 0;
