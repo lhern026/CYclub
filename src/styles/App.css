@@ -40,10 +40,11 @@ nav{
 }
 
 .gradient-text {
-  background: -webkit-linear-gradient(left, #12355B 30%, #6290C3 60%);
+  background: -webkit-linear-gradient( #12355B , #6290C3);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+ 
 }
 
 .faqcont{

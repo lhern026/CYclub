@@ -43,8 +43,8 @@ const styles = {
 };
 
 const config = {
-  // animate: true,
-  // arrowIcon: "V",
+  animate: true,
+  arrowIcon: "🛥V",
   // tabFocus: true
 };
 
@@ -217,16 +217,13 @@ const App = () => {
           
           
           <h1 className="header gradient-text">Crypto <br></br> Yacht <br></br> Club</h1>
-          <h1 className="header gradient-text">Crypto <br></br> Yacht <br></br> Club</h1>
-          <h1 className="header gradient-text">Crypto <br></br> Yacht <br></br> Club</h1>
+          
           
           <p className="sub-text">
           
             
           </p>
-          <button  className="cta-button connect-wallet-button"><link rel="stylesheet" href="https://umbria.network/connect/ethereum-testnet-rinkeby" target="_blank" />
-              switch networks
-            </button>
+          
           {currentAccount === "" ? (
             renderNotConnectedContainer()
           ) : (
@@ -235,6 +232,9 @@ const App = () => {
             </button>
            
           )}
+        </div>
+        <div>
+          <h2 className="header gradient-text">Roadmap</h2>
         </div>
         {/* <Faqlist></Faqlist> */}
         <div className="faqcont">
