@@ -55,17 +55,15 @@ nav{
   
 
 }
-.ocean{
- 
-}
+
 .sky {
-  position: absolute;
+  position:sticky;
   height: 0;
   width: 0;
   background: transparent;
   border: solid;
   border-width: 500px 338px 50px 338px;
-  border-color: darkslateblue transparent transparent transparent;
+  border-color: #6290C3 transparent transparent transparent;
   z-index: -2;
   left: 50%;
   top: 70%;
@@ -73,35 +71,27 @@ nav{
   transform: translateX(-50%)
 }
 
-.base {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 0px;
-  width: 0px;
-  background: transparent;
-  border-style: solid;
-  border-width: 300px 200px 0 200px;
-  border-color: midnightblue transparent transparent transparent;
-}
+
+/*waves*/ 
+
 .waves {
   position: absolute;
   height: 0px;
   width: 0px;
   background: transparent;
-  margin-top: -219px;
+  
   top: 70%;
   left: 50%;
   border-style: solid;
-  border-width: 50px 20px 20px 20px;
-  border-color: transparent transparent midnightblue transparent;
+  border-width: 1rem 1rem 1rem 1rem;
+  border-color: transparent transparent #779fcd;
   animation-name: tide;
   animation-fill-mode: both;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+
 #wave1 { 
   animation-duration: 96s;
   animation-delay: 0s;
@@ -307,57 +297,27 @@ nav{
   from{transform: translateX(-200px)}   
   to{transform: translateX(160px)}
 }
+
+/**boat**/
+
 .boat {
+ 
   position: absolute;
-  z-index: -1;
-  top: 70%;
+  
+  
+  top: 94%;
   left: 50%;
+  border-style: solid;
+  border-width: 1rem 1rem 1rem 1rem;
+  border-color: transparent transparent #779fcd;
+  animation-name: tide;
+ 
+  
   animation: sailing 45s 4s both linear infinite alternate;
 }
 
 #hull {
-  background: transparent;
-  border: solid;
-  border-color: tomato transparent transparent transparent;
-  border-width: 20px 50px 0px 30px;
-  height: 0px;
-  width: 0px;
-  margin-top: -180px;
-  margin-left: -180px;
-}
-
-#mainsail {
-  background: transparent;
-  border: solid;
-  border-color: transparent peachpuff transparent transparent;
-  border-width: 50px 20px 0 15px;
-  margin-top: -232px;
-  margin-left: -187px;
-}
-
-#jib {
-  background: transparent;
-  border: solid;
-  border-color: transparent transparent transparent peachpuff;
-  border-width: 45px 30px 0 30px;
-  margin-top: -227px;
-  margin-left: -150px;
-}
-
-@keyframes sailing {
-  0%{transform: translateX(-0px)}
-  100%{transform: translateX(300px)}
-}
-.boat {
-  position: absolute;
-  z-index: -1;
-  top: 70%;
-  left: 50%;
-  animation: sailing 45s 4s both linear infinite alternate;
-}
-
-#hull {
-  background: transparent;
+  
   border: solid;
   border-color: tomato transparent transparent transparent;
   border-width: 20px 50px 0px 30px;
