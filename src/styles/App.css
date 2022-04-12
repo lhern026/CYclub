@@ -15,18 +15,11 @@ nav{
   background: -webkit-linear-gradient(left, #f9e8ac 10%, rgba(253,243,243) 80%);
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
-  height: 100%;
-  width: 10%;
+  height: 150vh;
+  width: 6%;
   margin-top: -2rem;
 };
 
-.container {
-  height: 100%;
-  background: -webkit-linear-gradient(right, #0A1F0D 10%, #6290C3 80%);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 
 .header-container {
   padding-top: 30px;
@@ -51,6 +44,7 @@ nav{
   -webkit-text-fill-color: transparent;
  
 }
+
 
 .faqcont{
   width: 50%;
@@ -331,6 +325,14 @@ nav{
     
     
   }
+ 
+    nav{
+      position: fixed;
+      height: 150vh;
+      
+    
+  }
+
   
 }
 #hull {
@@ -392,10 +394,45 @@ nav{
   animation: gradient-animation 4s ease infinite;
   margin-right: 15px;
 }
-h1{
-  background: -webkit-linear-gradient(left, #0A1F0D, #35aee2);
+.roadmap div {
+  border: 1px solid pink;
+  flex-direction: row;
+  width: 33.33%;
+  
 }
+ #roadmap{
+  
+  margin-top: 50%;
+  color: #f9e8ac;
+  
+}
+.roadmap{
+  border: 1px solid red;
+  height: 30rem;
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+@media only screen and (max-width: 600px) {
+  .roadmap{
+    
+    flex-direction: column;
+    height: 100rem;
 
+    
+  }
+  .roadmap div{
+    opacity: .43;
+    width: auto;
+    height: 33%;
+    border: 1px solid red;
+    
+    
+    
+    
+  }
+  
+}
 .opensea-button {
   background-color: rgb(32, 129, 226);
 }
@@ -421,6 +458,7 @@ h1{
   width: 50%;
   height: 30%;
   margin: auto;
+  opacity: .5;
 }
 
 .footer-text {

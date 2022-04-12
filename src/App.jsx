@@ -36,9 +36,9 @@ const data = {
 
 const styles = {
   bgColor: '12355B',
-  titleTextColor: '#F9DB6D',
+  titleTextColor: '#6290C3',
   rowTitleColor: '#F6F3F6',
-  rowContentColor: 'grey',
+  rowContentColor: '#F6F3F6',
   arrowColor: "black",
 };
 
@@ -95,7 +95,7 @@ const App = () => {
         if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
 
           // open the deeplink page 
-          window.open("https://metamask.app.link/dapp/crypto-yacht-front.vercel.app/")
+          window.open("https://metamask.app.link/dapp/cy-club.vercel.app/")
           
           }
       }else{
@@ -211,12 +211,16 @@ const App = () => {
       
       <div className="container">
         <div className="header-container">
-          <nav><div className="yacht"><img className="yacht" src="yacht.png" alt="" /></div>
+          <nav>
+            <div className="yacht"><img className="yacht" src="yacht.png" alt="" /></div>
+          <div className="yacht"><img className="yacht" src="yacht.png" alt="" /></div>
+          <div className="yacht"><img className="yacht" src="yacht.png" alt="" /></div>
+          <div className="yacht"><img className="yacht" src="yacht.png" alt="" /></div>
             
           </nav>
           
           
-          <h1 className="header gradient-text">Crypto <br></br> Yacht <br></br> Club</h1>
+          <h1 className="header gradient-text">Crypto <br></br > <span id="yacht">Yacht</span> <br></br> Club</h1>
           
           
           <p className="sub-text">
@@ -234,7 +238,13 @@ const App = () => {
           )}
         </div>
         <div>
-          <h2 class="header gradient-text">Roadmap</h2>
+          <h2 class="header gradient-text" id="roadmap">Roadmap</h2>
+          <div className="roadmap">
+              <div className="phase1">a</div>
+              <div className="phase2">b</div>
+              <div className="phase3">c</div>
+           
+          </div>
           <div className="containerOcean">
                 <div class = "base"></div>
                 <div class = "ocean">
