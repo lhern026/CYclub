@@ -2,6 +2,51 @@ import React, { useEffect, useState } from "react";
 import './styles/App.css';
 import { ethers } from "ethers";
 import YachtNFT from './utils/YachtNFT.json'
+import Faqlist from './assets/components/Faqlist'
+import Faq from "react-faq-component";
+
+const data = {
+  title: "FAQ (How it works)",
+  rows: [
+      {
+          title: "Lorem ipsum dolor sit amet,",
+          content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tempor sem. Aenean vel turpis feugiat,
+            ultricies metus at, consequat velit. Curabitur est nibh, varius in tellus nec, mattis pulvinar metus.
+            In maximus cursus lorem, nec laoreet velit eleifend vel. Ut aliquet mauris tortor, sed egestas libero interdum vitae.
+            Fusce sed commodo purus, at tempus turpis.`,
+      },
+      {
+          title: "Nunc maximus, magna at ultricies elementum",
+          content:
+              "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam, vitae convallis ex tortor sed dolor.",
+      },
+      {
+          title: "Curabitur laoreet, mauris vel blandit fringilla",
+          content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem.
+          Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam.
+          Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat.
+          Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `,
+      },
+      {
+          title: "What is the package version",
+          content: <p>current version is 1.2.1</p>,
+      },
+  ],
+};
+
+const styles = {
+  bgColor: '12355B',
+  titleTextColor: 'F9DB6D',
+  rowTitleColor: 'F9DB6D',
+  rowContentColor: 'grey',
+  arrowColor: "red",
+};
+
+const config = {
+  // animate: true,
+  // arrowIcon: "V",
+  // tabFocus: true
+};
 
 
 
@@ -174,20 +219,34 @@ const App = () => {
           <h1 className="header gradient-text">Crypto <br></br> Yacht <br></br> Club</h1>
           <h1 className="header gradient-text">Crypto <br></br> Yacht <br></br> Club</h1>
           <h1 className="header gradient-text">Crypto <br></br> Yacht <br></br> Club</h1>
+          
           <p className="sub-text">
           
             
           </p>
+          <button  className="cta-button connect-wallet-button"><link rel="stylesheet" href="https://umbria.network/connect/ethereum-testnet-rinkeby" target="_blank" />
+              switch networks
+            </button>
           {currentAccount === "" ? (
             renderNotConnectedContainer()
           ) : (
             <button onClick={askContractToMintNft} className="cta-button connect-wallet-button">
               Mint NFT
             </button>
+           
           )}
         </div>
+        {/* <Faqlist></Faqlist> */}
+        <div className="faqcont">
+          <Faq className="faqlist"
+                  data={data}
+                  styles={styles}
+                  config={config}
+              />
+        </div>
         <div className="footer-container">
-        <p className="header gradient-text"><br></br>FAQ </p>
+          
+          
           
           
           

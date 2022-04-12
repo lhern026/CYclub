@@ -46,6 +46,16 @@ nav{
   -webkit-text-fill-color: transparent;
 }
 
+.faqcont{
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  margin-top: 20%;
+  
+
+}
+
+
 .cta-button {
   height: 45px;
   border: 0;
