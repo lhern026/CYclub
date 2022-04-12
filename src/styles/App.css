@@ -1,7 +1,9 @@
 .App {
   height: 100vh;
   background-color: #0A1F0D;
-  background: -webkit-linear-gradient(right, #f9e8ac 10%, #6290C3 80%);
+  background: -webkit-linear-gradient(left, #0A1F0D, #12355B);
+  background-size: 200% 200%;
+  animation: gradient-animation 22s ease infinite;
   
   overflow: scroll;
   text-align: center;
@@ -11,6 +13,8 @@ nav{
   color: #6290C3;
   /* background: #ffd300; */
   background: -webkit-linear-gradient(left, #f9e8ac 10%, rgba(253,243,243) 80%);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
   height: 100%;
   width: 10%;
   margin-top: -2rem;
@@ -40,7 +44,8 @@ nav{
 }
 
 .gradient-text {
-  background: -webkit-linear-gradient( #12355B , #6290C3);
+  background: -webkit-linear-gradient( #31577e , #6290C3);
+  
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -303,6 +308,7 @@ nav{
 .boat {
  
   position: absolute;
+  opacity: .4;
   
   
   top: 94%;
@@ -317,7 +323,7 @@ nav{
 }
 @media only screen and (max-width: 600px) {
   .boat {
-    
+    opacity: .43;
   
     
     top: 106% !important;

@@ -36,16 +36,16 @@ const data = {
 
 const styles = {
   bgColor: '12355B',
-  titleTextColor: 'F9DB6D',
-  rowTitleColor: 'F9DB6D',
+  titleTextColor: '#F9DB6D',
+  rowTitleColor: '#F6F3F6',
   rowContentColor: 'grey',
   arrowColor: "black",
 };
 
 const config = {
   animate: true,
-  arrowIcon: "🛥V",
-  // tabFocus: true
+  arrowIcon: " ⬇️",
+  tabFocus: true
 };
 
 
