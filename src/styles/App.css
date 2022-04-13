@@ -392,7 +392,7 @@ nav{
   margin-right: 15px;
 }
 .roadmap div {
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
   flex-direction: row;
   width: 33.33%;
   
@@ -404,7 +404,7 @@ nav{
   
 }
 .roadmap{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 30rem;
   width: 80%;
   margin: auto;
@@ -422,7 +422,7 @@ nav{
     opacity: .43;
     width: auto;
     height: 33%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     
     
     
@@ -458,7 +458,7 @@ nav{
   opacity: .5;
 }
 .whitePaper{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 46rem;
   width: 80%;
   padding: 4%;
