@@ -210,17 +210,21 @@ const App = () => {
     <div className="App">
       
       <div className="container">
-        <div className="header-container">
-          <nav>
+      <nav>
             <div className="yacht"><img className="yacht" src="yacht.png" alt="" /></div>
-          <div className="yacht"><img className="yacht" src="yacht.png" alt="" /></div>
-          <div className="yacht"><img className="yacht" src="yacht.png" alt="" /></div>
-          <div className="yacht"><img className="yacht" src="yacht.png" alt="" /></div>
+            <div className="yacht"><img className="yacht" src="yacht.png" alt="" /></div>
+            <div className="yacht"><img className="yacht" src="yacht.png" alt="" /></div>
+            <div className="yacht"><img className="yacht" src="yacht.png" alt="" /></div>
             
           </nav>
+        
+        <div className="header-container">
           
           
-          <h1 className="header gradient-text">Crypto <br></br > <span id="yacht">Yacht</span> <br></br> Club</h1>
+          <div className="firstHeader">
+            <h1 className="header gradient-text">Crypto <br></br > <span id="yacht">Yacht</span> <br></br> Club</h1>
+          </div>
+         
           
           
           <p className="sub-text">
@@ -240,13 +244,13 @@ const App = () => {
         <div>
           <h2 class="header gradient-text" id="roadmap">Roadmap</h2>
           <div className="roadmap">
-              <div className="phase1">a</div>
-              <div className="phase2">b</div>
-              <div className="phase3">c</div>
+              <div className="phase1"><h1>phase 1</h1></div>
+              <div className="phase2"><h1>phase 2</h1></div>
+              <div className="phase3"><h1>phase 3</h1></div>
            
           </div>
           <div className="containerOcean">
-                <div class = "base"></div>
+                
                 <div class = "ocean">
                   <span class = "waves" id ="wave1"></span>
                   <span class = "waves" id ="wave2"></span>
@@ -303,6 +307,11 @@ const App = () => {
                   styles={styles}
                   config={config}
               />
+        </div>
+        <div className="whitePaper">
+          <h2 className="header gradient-text">Whitepaper</h2>
+
+          
         </div>
         <div className="footer-container">
           

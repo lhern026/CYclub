@@ -15,20 +15,29 @@ nav{
   background: -webkit-linear-gradient(left, #f9e8ac 10%, rgba(253,243,243) 80%);
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
-  height: 150vh;
+  height: 102vh;
   width: 6%;
-  margin-top: -2rem;
+  margin-top: -10rem;
 };
 
 
 .header-container {
-  padding-top: 30px;
+  /* padding-top: 30px; */
+  /* border: 1px solid pink; */
 }
 
 .header {
   margin: 0;
   font-size: 50px;
   font-weight: bold;
+  /* border: 1px solid pink; */
+}
+.firstHeader{
+  /* border: 1px solid beige; */
+  margin-top: 10%;
+  width: 60%;
+  margin-left: 20%;
+
 }
 
 .sub-text {
@@ -55,20 +64,7 @@ nav{
 
 }
 
-.sky {
-  position:sticky;
-  height: 0;
-  width: 0;
-  background: transparent;
-  border: solid;
-  border-width: 500px 338px 50px 338px;
-  border-color: #6290C3 transparent transparent transparent;
-  z-index: -2;
-  left: 50%;
-  top: 70%;
-  margin-top: -352px;
-  transform: translateX(-50%)
-}
+
 
 
 /*waves*/ 
@@ -78,6 +74,7 @@ nav{
   height: 0px;
   width: 0px;
   background: transparent;
+  opacity: .3;
   
   top: 70%;
   left: 50%;
@@ -302,7 +299,7 @@ nav{
 .boat {
  
   position: absolute;
-  opacity: .4;
+  opacity: .1;
   
   
   top: 94%;
@@ -317,7 +314,7 @@ nav{
 }
 @media only screen and (max-width: 600px) {
   .boat {
-    opacity: .43;
+    
   
     
     top: 106% !important;
@@ -338,7 +335,7 @@ nav{
 #hull {
   
   border: solid;
-  border-color: tomato transparent transparent transparent;
+  border-color: #F9DB6D transparent transparent transparent;
   border-width: 20px 50px 0px 30px;
   height: 0px;
   width: 0px;
@@ -349,7 +346,7 @@ nav{
 #mainsail {
   background: transparent;
   border: solid;
-  border-color: transparent peachpuff transparent transparent;
+  border-color: transparent #F6F3F6 transparent transparent;
   border-width: 50px 20px 0 15px;
   margin-top: -232px;
   margin-left: -187px;
@@ -459,6 +456,10 @@ nav{
   height: 30%;
   margin: auto;
   opacity: .5;
+}
+.whitePaper{
+  border: 1px solid black;
+  margin-top: 30%;
 }
 
 .footer-text {
