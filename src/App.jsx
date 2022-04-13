@@ -249,6 +249,12 @@ const App = () => {
               <div className="phase3"><h1>phase 3</h1></div>
            
           </div>
+          <div className="roadmap">
+              <div className="phase1"><h1>phase 4</h1></div>
+              <div className="phase2"><h1>phase 5</h1></div>
+              <div className="phase3"><h1>phase 6</h1></div>
+           
+          </div>
           <div className="containerOcean">
                 
                 <div class = "ocean">
@@ -310,6 +316,7 @@ const App = () => {
         </div>
         <div className="whitePaper">
           <h2 className="header gradient-text">Whitepaper</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure aperiam reprehenderit tenetur aliquid, iusto illum possimus voluptatibus animi odio deleniti necessitatibus quos rem autem, quidem, fugiat at porro nemo nisi.</p>
 
           
         </div>
