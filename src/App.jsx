@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import './styles/App.css';
 import { ethers } from "ethers";
-import YachtNFT from './utils/YachtNFT.json'
-import Faqlist from './assets/components/Faqlist'
+import YachtNFT from './utils/YachtNFT.json';
+import mintcounter from './assets/components/mintcounter';
 import Faq from "react-faq-component";
 
 const data = {
@@ -316,7 +316,9 @@ const App = () => {
         </div>
         <div className="whitePaper">
           <h2 className="header gradient-text">Whitepaper</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure aperiam reprehenderit tenetur aliquid, iusto illum possimus voluptatibus animi odio deleniti necessitatibus quos rem autem, quidem, fugiat at porro nemo nisi.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure 
+            aperiam reprehenderit tenetur aliquid, iusto illum possimus voluptatibus animi 
+            odio deleniti necessitatibus quos rem autem, quidem, fugiat at porro nemo nisi.</p>
 
           
         </div>

@@ -28,7 +28,7 @@ nav{
 
 .header {
   margin: 0;
-  font-size: 50px;
+  font-size: 7rem;
   font-weight: bold;
   /* border: 1px solid pink; */
 }
@@ -313,6 +313,12 @@ nav{
   animation: sailing 45s 4s both linear infinite alternate;
 }
 @media only screen and (max-width: 600px) {
+  .header {
+   
+    font-size: 2.7rem;
+    
+    /* border: 1px solid pink; */
+  }
   .boat {
     
   
