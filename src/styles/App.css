@@ -6,6 +6,7 @@
   animation: gradient-animation 22s ease infinite;
   
   overflow: scroll;
+  font-size: 100%;
   text-align: center;
 }
 nav{
@@ -28,7 +29,7 @@ nav{
 
 .header {
   margin: 0;
-  font-size: 9em;
+  font-size: 6em;
   font-weight: bold;
   /* border: 1px solid pink; */
 }
@@ -41,7 +42,7 @@ nav{
 }
 
 .sub-text {
-  font-size: 25px;
+  font-size: 1em;
   color: white;
 }
 
@@ -315,7 +316,7 @@ nav{
 @media only screen and (max-width: 600px) {
   .header {
    
-    font-size: 2.7rem;
+    font-size: 2.7em;
     
     /* border: 1px solid pink; */
   }
@@ -379,7 +380,7 @@ nav{
   padding-right: 40px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: bold;
   color: white;
 }
@@ -442,7 +443,7 @@ nav{
 
 .mint-count {
   color: white;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -476,7 +477,7 @@ nav{
 
 .footer-text {
   color: white;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: bold;
 }
 
