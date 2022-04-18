@@ -13,9 +13,9 @@ nav{
   position: fixed;
   color: #6290C3;
   /* background: #ffd300; */
-  background: -webkit-linear-gradient(left, #f9e8ac 10%, #12355B 90%);
+  background: -webkit-linear-gradient(right, #d7b22b 10%, #F9DB6D 90%);
   background-size: 200% 200%;
-  animation: gradient-animation 3s ease infinite;
+  animation: gradient-animation 4s ease infinite;
   height: 102vh;
   width: 6%;
   margin-top: -10rem;
@@ -34,7 +34,7 @@ nav{
   margin-top: 10%;
   width: 60%;
   margin-left: 20%;
-  font-size: 2em;
+  font-size: 3em;
 
 }
 
@@ -316,10 +316,10 @@ h2{
 @media only screen and (max-width: 600px) {
   .firstHeader{
     /* border: 1px solid beige; */
-    margin-top: 10%;
+    margin-top: 20%;
     width: 60%;
     margin-left: 20%;
-    font-size: 1em;
+    font-size: 1.3em;
   
   }
   .header {

@@ -6,8 +6,9 @@ import mintcounter from './assets/components/mintcounter';
 import Faq from "react-faq-component";
 
 
+
 const data = {
-  title: "FAQ (How it works)",
+  title: "FAQ  ",
   rows: [
       {
           title: "Lorem ipsum dolor sit amet,",
@@ -36,8 +37,8 @@ const data = {
 };
 
 const styles = {
-  bgColor: '12355B',
-  titleTextColor: '#6290C3',
+  bgColor: '#0A1F0D',
+  titleTextColor: '#F6F3F6',
   rowTitleColor: '#F6F3F6',
   rowContentColor: '#F6F3F6',
   arrowColor: "black",
@@ -55,14 +56,11 @@ const config = {
 const TWITTER_HANDLE = '_buildspace';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 const OPENSEA_LINK = '';
-const TOTAL_MINT_COUNT = 50;
+const TOTAL_MINT_COUNT = 1000;
 
 const App = () => {
   const [currentAccount, setCurrentAccount] = useState("");
-  
-
-  
-  
+    
   const checkIfWalletIsConnected = async () => {
     const { ethereum } = window;
     
