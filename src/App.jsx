@@ -207,12 +207,14 @@ const App = () => {
   */
   return (
     <div className="App">
-      
-      <div className="container">
       <nav>
-            
-            
-          </nav>
+        <ul>
+          <div></div>
+          
+          </ul>
+      </nav>
+      <div className="container">
+      
         
         <div className="header-container">
           
@@ -320,6 +322,12 @@ const App = () => {
           
         </div>
         <div className="footer-container">
+          <nav>
+          <ul>
+            <div></div>
+            
+            </ul>
+        </nav>
           
           
           

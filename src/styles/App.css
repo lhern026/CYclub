@@ -1,29 +1,31 @@
-
 .App {
   height: 100vh;
-  background: url(https://images.unsplash.com/photo-1544306094-e2dcf9479da3) ;
-  background-color: #0A1F0D;
-  /* background: -webkit-linear-gradient(left, #0A1F0D, #12355B); */
+  background: url(https://images.unsplash.com/photo-1544306094-e2dcf9479da3) no-repeat;
+  background-attachment: fixed; 
   background-size: 200% 200%;
+  align-items: center;
   animation: gradient-animation 202s ease infinite;
   overflow: scroll;
   font-size: 100%;
   text-align: center;
+  justify-content: center;
 }
 nav{
-  position: fixed;
-  background-color: #6290C3;
   
-  /* background: #ffd300; */
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(5px);
+  height: 15%;
   
-  background-size: 200% 200%;
-  animation: gradient-animation 4s ease infinite;
-  height: 102vh;
-  width: 6%;
-  margin-top: -10rem;
+
+  /* background-size: 200% 200%; */
+   width: 90%;
+   margin: auto
+  
 };
-
-
+ ul {
+  list-style-type: none;
+  padding: 100%;
+}
 
 .header {
   margin: 0;
