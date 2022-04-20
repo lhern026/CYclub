@@ -13,7 +13,7 @@
 nav{
   position: fixed;
   background-color: #6290C3;
-  backdrop-filter: blur(5px);
+  
   /* background: #ffd300; */
   
   background-size: 200% 200%;
