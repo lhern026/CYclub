@@ -210,10 +210,7 @@ const App = () => {
       
       <div className="container">
       <nav>
-            <div className="yacht"><img className="yacht" src="yacht.png" alt="" /></div>
-            <div className="yacht"><img className="yacht" src="yacht.png" alt="" /></div>
-            <div className="yacht"><img className="yacht" src="yacht.png" alt="" /></div>
-            <div className="yacht"><img className="yacht" src="yacht.png" alt="" /></div>
+            
             
           </nav>
         
