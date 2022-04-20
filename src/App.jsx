@@ -37,7 +37,7 @@ const data = {
 };
 
 const styles = {
-  bgColor: '#0A1F0D',
+  bgColor: 'rgba(154,191,171)',
   titleTextColor: '#F6F3F6',
   rowTitleColor: '#F6F3F6',
   rowContentColor: '#F6F3F6',
