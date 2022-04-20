@@ -39,6 +39,8 @@ nav{
   width: 60%;
   margin-left: 20%;
   font-size: 3em;
+  background-color: linear-gradient(45deg, #6303B1, #ff0099);
+  backdrop-filter: blur(50px);
 
 }
 
