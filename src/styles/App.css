@@ -1,6 +1,6 @@
 .App {
   height: 100vh;
-  background: url(https://images.unsplash.com/photo-1544306094-e2dcf9479da3) no-repeat;
+  background: url(https://images.unsplash.com/photo-1544306094-e2dcf9479da3) ;
   background-attachment: fixed; 
   background-size: 200% 200%;
   align-items: center;
@@ -91,7 +91,7 @@ h2{
   height: 0px;
   width: 0px;
   background: transparent;
-  opacity: .3;
+  opacity: .1;
   
   top: 70%;
   left: 50%;
