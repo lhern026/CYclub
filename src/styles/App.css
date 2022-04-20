@@ -22,10 +22,6 @@ nav{
    margin: auto
   
 };
- ul {
-  list-style-type: none;
-  padding: 100%;
-}
 
 .header {
   margin: 0;
@@ -450,7 +446,7 @@ h2{
     
   }
   .roadmap div{
-    opacity: .43;
+
     width: auto;
     height: 33%;
     /* border: 1px solid red; */
