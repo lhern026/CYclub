@@ -48,9 +48,9 @@ nav{
 }
 
 h2{
-  font-size: 7em;
-  backdrop-filter: blur(2.3px);
-  transform: skewY(-5deg);
+  font-size: 6em;
+  backdrop-filter: blur(6px);
+  
   
 }
 .sub-text {

@@ -8,7 +8,7 @@ import Faq from "react-faq-component";
 
 
 const data = {
-  title: "FAQ  ",
+  title: "  ",
   rows: [
       {
           title: "Lorem ipsum dolor sit amet,",
@@ -37,7 +37,7 @@ const data = {
 };
 
 const styles = {
-  bgColor: 'rgba(154,191,171)',
+  bgColor: 'rgba(144,191,191)',
   titleTextColor: '#F6F3F6',
   rowTitleColor: '#F6F3F6',
   rowContentColor: '#F6F3F6',
@@ -214,6 +214,7 @@ const App = () => {
         <div className="header-container">
           
           
+          
           <div className="firstHeader">
             <h1 className="header gradient-text">Crypto <br></br > <span id="yacht">Yacht</span> <br></br> Club</h1>
           </div>
@@ -301,7 +302,9 @@ const App = () => {
               </div>
               </div>
         {/* <Faqlist></Faqlist> */}
+       < h2 className="header gradient-text">FAQ</h2>
         <div className="faqcont">
+        
           <Faq className="faqlist"
                   data={data}
                   styles={styles}
