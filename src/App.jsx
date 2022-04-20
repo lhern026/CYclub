@@ -65,7 +65,7 @@ const App = () => {
     const { ethereum } = window;
     
     if (!ethereum) {
-      console.log("Make sure you have metamask!");
+      alert("Make sure you have metamask!");
       return;
     } else {
       console.log("We have the ethereum object", ethereum);
@@ -133,7 +133,7 @@ const App = () => {
   // Setup our listener.
   const setupEventListener = async () => {
     // Most of this looks the same as our function askContractToMintNft
-    const CONTRACT_ADDRESS = "0x69fD69087f52Cc51EABB3B42B97190E26889C7c8";
+    const CONTRACT_ADDRESS = "0xc00B3459C0Fa22Cb6C4C7873aFe6525D532C6B5D";
     try {
       const { ethereum } = window;
 
@@ -164,7 +164,7 @@ const App = () => {
   //mint function 
 
   const askContractToMintNft = async () => {
-    const CONTRACT_ADDRESS = "0x69fD69087f52Cc51EABB3B42B97190E26889C7c8";
+    const CONTRACT_ADDRESS = "0xc00B3459C0Fa22Cb6C4C7873aFe6525D532C6B5D";
   
     try {
       const { ethereum } = window;
@@ -254,6 +254,7 @@ const App = () => {
               <div className="phase3"><h1>phase 6</h1></div>
            
           </div>
+          
           <div className="containerOcean">
                 
                 <div class = "ocean">

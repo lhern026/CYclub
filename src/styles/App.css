@@ -1,19 +1,22 @@
+
 .App {
   height: 100vh;
+  background-attachment: fixed;
+  background: url(https://images.unsplash.com/photo-1544306094-e2dcf9479da3) no-repeat;
   background-color: #0A1F0D;
-  background: -webkit-linear-gradient(left, #0A1F0D, #12355B);
+  /* background: -webkit-linear-gradient(left, #0A1F0D, #12355B); */
   background-size: 200% 200%;
-  animation: gradient-animation 22s ease infinite;
-  
+  animation: gradient-animation 202s ease infinite;
   overflow: scroll;
   font-size: 100%;
   text-align: center;
 }
 nav{
   position: fixed;
-  color: #6290C3;
+  background-color: #6290C3;
+  backdrop-filter: blur(5px);
   /* background: #ffd300; */
-  background: -webkit-linear-gradient(right, #d7b22b 10%, #F9DB6D 90%);
+  
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
   height: 102vh;
