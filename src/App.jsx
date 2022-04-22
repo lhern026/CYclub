@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
 import './styles/App.css';
+import { ThemeProvider } from 'styled-components';
+import { theme } from './theme';
 import { ethers } from "ethers";
 import YachtNFT from './utils/YachtNFT.json';
-import mintcounter from './assets/components/mintcounter';
+import mintcounter from './assets/components/mintcounter/mintcounter';
+import Navbar from './assets/components/Navbar/Navbar'
 import Faq from "react-faq-component";
+
 
 
 
@@ -50,12 +54,7 @@ const config = {
   tabFocus: true
 };
 
-
-
-
-const TWITTER_HANDLE = '_buildspace';
-const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
-const OPENSEA_LINK = '';
+const OPENSEA_LINK = "";
 const TOTAL_MINT_COUNT = 1000;
 
 const App = () => {
@@ -63,6 +62,14 @@ const App = () => {
     
   const checkIfWalletIsConnected = async () => {
     const { ethereum } = window;
+    let chainId = await ethereum.request({ method: 'eth_chainId' });
+console.log("Connected to chain " + chainId);
+
+// String, hex code of the chainId of the Rinkebey test network
+const rinkebyChainId = "0x4"; 
+if (chainId !== rinkebyChainId) {
+	alert("You are not connected to the Rinkeby Test Network!");
+}
     
     if (!ethereum) {
       console.log("Make sure you have metamask!");
@@ -134,8 +141,13 @@ const App = () => {
   const setupEventListener = async () => {
     // Most of this looks the same as our function askContractToMintNft
     const CONTRACT_ADDRESS = "0xc00B3459C0Fa22Cb6C4C7873aFe6525D532C6B5D";
+  
+    
     try {
       const { ethereum } = window;
+      
+    
+      
 
       if (ethereum) {
         // Same stuff again
@@ -209,9 +221,10 @@ const App = () => {
     <div className="App">
       
       <div className="container">
-      
-        
+     
+        {/* <Navbar /> */}
         <div className="header-container">
+          
           
           
           

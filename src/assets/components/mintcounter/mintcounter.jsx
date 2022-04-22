@@ -1,5 +1,5 @@
-
-
+import React, { useEffect, useState } from "react";
+import './mintcounter.css'
 
 
 export default function mintcounter(){
