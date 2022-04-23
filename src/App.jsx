@@ -5,8 +5,11 @@ import { theme } from './theme';
 import { ethers } from "ethers";
 import YachtNFT from './utils/YachtNFT.json';
 import mintcounter from './assets/components/mintcounter/mintcounter';
-import Navbar from './assets/components/Navbar/Navbar'
+import Navbar from './assets/components/Navbar/Navbar';
+import Burgerstyled from './assets/components/Burger/Burgerstyled';
+
 import Faq from "react-faq-component";
+
 
 
 
@@ -140,7 +143,7 @@ if (chainId !== rinkebyChainId) {
   // Setup our listener.
   const setupEventListener = async () => {
     // Most of this looks the same as our function askContractToMintNft
-    const CONTRACT_ADDRESS = "0xc00B3459C0Fa22Cb6C4C7873aFe6525D532C6B5D";
+    const CONTRACT_ADDRESS = "0xFBfbA15309Dd2a48B2c05898326d3F603E794245";
   
     
     try {
@@ -176,7 +179,7 @@ if (chainId !== rinkebyChainId) {
   //mint function 
 
   const askContractToMintNft = async () => {
-    const CONTRACT_ADDRESS = "0xc00B3459C0Fa22Cb6C4C7873aFe6525D532C6B5D";
+    const CONTRACT_ADDRESS = "0xFBfbA15309Dd2a48B2c05898326d3F603E794245";
   
     try {
       const { ethereum } = window;
@@ -219,8 +222,13 @@ if (chainId !== rinkebyChainId) {
   */
   return (
     <div className="App">
+      <style>
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans:wdth,wght@89.4,572&family=Roboto&display=swap');
+</style>
       
       <div className="container">
+      
+        
      
         {/* <Navbar /> */}
         <div className="header-container">
@@ -231,14 +239,6 @@ if (chainId !== rinkebyChainId) {
           <div className="firstHeader">
             <h1 className="header gradient-text">Crypto <br></br > <span id="yacht">Yacht</span> <br></br> Club</h1>
           </div>
-         
-          
-          
-          <p className="sub-text">
-          
-            
-          </p>
-          
           {currentAccount === "" ? (
             renderNotConnectedContainer()
           ) : (
@@ -306,9 +306,7 @@ if (chainId !== rinkebyChainId) {
                   <span class = "waves" id ="wave38"></span>
                   <span class = "waves" id ="wave39"></span>
                   <span class = "waves" id ="wave40"></span>
-                  <span class = "boat" id = "hull"></span>
-                  <span class = "boat" id = "mainsail"></span>
-                  <span class = "boat" id = "jib"></span>
+                 
                   
                     </div>
                     <div class = "sky"></div>

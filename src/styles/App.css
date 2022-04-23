@@ -10,25 +10,8 @@
   text-align: center;
   justify-content: center;
 }
-nav{
-  
-  background-color: rgba(255, 255, 255, .15);  
-  backdrop-filter: blur(5px);
-  height: 15%;
-  
 
-  /* background-size: 200% 200%; */
-   width: 90%;
-   margin: auto
-  
-};
 
-.header {
-  margin: 0;
- 
-  font-weight: bold;
-  /* border: 1px solid pink; */
-}
 .firstHeader{
   /* border: 1px solid beige; */
   margin-top: 10%;
@@ -492,9 +475,17 @@ h2{
   margin-top: 5%;
   margin-left: auto;
   margin-right: auto;
+  background: -webkit-linear-gradient(left, #339642, #004d6e);
+  background-size: 300% 300%;
+  animation: gradient-animation 9s ease infinite;
 
 }
+p{
+  font-style: inherit;
+  color: #01abf4;
+  box-shadow: 5px 5px 5px #B4EDD2;
 
+}
 .footer-text {
   color: white;
   font-size: 1em;
