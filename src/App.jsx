@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './styles/App.css';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './theme';
@@ -228,6 +229,15 @@ if (chainId !== rinkebyChainId) {
       
       
       <div className="container">
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route   />
+            <Route   />
+            <Route  />
+            <Route  />
+          </Routes>
+      </Router>
       
         
      

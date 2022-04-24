@@ -411,7 +411,8 @@ h2{
   /* border: 1px solid pink; */
   flex-direction: row;
   width: 33.33%;
-  border: 1rem double black;
+  border: 1rem double #12355B;
+  border-style: groove;
   
 }
  #roadmap{

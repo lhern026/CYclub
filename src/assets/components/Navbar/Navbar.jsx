@@ -1,21 +1,19 @@
 import './Navbar.css';
-import { ThemeProvider } from 'styled-components';
-import { GlobalStyles } from '../../../global';
-import { theme } from '../../../theme';
-
+import React from 'react';
+import {  Link } from "react-router-dom";
 
 export default function Navbar(){
     
     return (
         
-        <nav className="navBar">
-            
-            <ul >
-                <li></li>
-                <li></li>
-                <li></li>
+        <div className='navBar'>
+            <ul>
+                <li>logo</li>
+                <li>roadmap</li>
+                <li>faq</li>
+                <li>whtiepaper</li>
             </ul>
-      </nav>
+  </div>
         
     )
 }
