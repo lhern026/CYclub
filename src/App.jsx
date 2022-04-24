@@ -232,10 +232,10 @@ if (chainId !== rinkebyChainId) {
       <div className='navBar'>
             <ul>
                 
-                <li className='navs'><a href='#faq'>Logo</a></li>
-                <li className='navs'>Roadmap</li>
-                <li className='navs'>Faq</li>
-                <li className='navs'>Whtiepaper</li>
+                <li className='navs'>logo</li>
+                <li className='navs'><a href='#roadmap'>Roadmap</a></li>
+                <li className='navs'><a href='#faq'>Faq</a></li>
+                <li className='navs'><a href='#whitepaper'>Whtiepaper</a></li>
             </ul>
   </div>
         {/* <Router>
@@ -277,6 +277,7 @@ if (chainId !== rinkebyChainId) {
            
           </div>
           <div className="roadmap">
+              <a name="roadmap"></a>
               <div className="phase1"><h1>Phase 4</h1></div>
               <div className="phase2"><h1>Phase 5</h1></div>
               <div className="phase3"><h1>Phase 6</h1></div>
@@ -333,18 +334,22 @@ if (chainId !== rinkebyChainId) {
               </div>
               </div>
         {/* <Faqlist></Faqlist> */}
+        <a name="faq"></a>
        < h2 className="header gradient-text">FAQ</h2>
+       
         <div className="faqcont">
-          <a name="faq"></a>
+          
         
           <Faq className="faqlist"
                   data={data}
                   styles={styles}
                   config={config}
               />
+       
         </div>
         <div className="whitePaper">
           <h2 className="header gradient-text">Whitepaper</h2>
+          <a name="whitepaper"></a>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure 
             aperiam reprehenderit tenetur aliquid, iusto illum possimus voluptatibus animi 
             odio deleniti necessitatibus quos rem autem, quidem, fugiat at porro nemo nisi.</p>
