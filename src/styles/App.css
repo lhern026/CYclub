@@ -1,6 +1,6 @@
 .App {
   height: 100vh;
-  background: url(https://images.unsplash.com/photo-1544306094-e2dcf9479da3) ;
+  background: url(https://images.unsplash.com/photo-1544306094-e2dcf9479da3)  no-repeat;
   background-attachment: fixed; 
   background-size: 200% 200%;
   align-items: center;
@@ -25,7 +25,9 @@
 
 
 }
-
+h1{
+  color: #12355B;
+}
 h2{
   font-size: 6em;
   backdrop-filter: blur(6px);
@@ -48,11 +50,16 @@ h2{
 
 
 .faqcont{
-  width: 80%;
-  height: 100%;
+  width: 100%;
+  
   margin: auto;
-  margin-top: 20%;
-  opacity: .9;
+  margin-top: 10%;
+  padding: 7rem;
+  background: -webkit-linear-gradient(left, #4caa7e 33%, #6290C3);
+  background-size: 200% 200%;
+  animation: gradient-animation 9s ease infinite;
+  border-radius: 2%;
+
 
 
 }
@@ -71,7 +78,6 @@ h2{
   width: 0px;
   background: transparent;
   opacity: .1;
-  
   top: 70%;
   left: 50%;
   border-style: solid;
@@ -405,20 +411,30 @@ h2{
   /* border: 1px solid pink; */
   flex-direction: row;
   width: 33.33%;
+  border: 1rem double black;
   
 }
  #roadmap{
   
   margin-top: 50%;
   color: #f9e8ac;
+  background-color: red;
   
 }
 .roadmap{
   /* border: 1px solid red; */
-  height: 30rem;
-  width: 80%;
+  height: 40rem;
+  width: 90%;
   margin: auto;
   display: flex;
+  background: -webkit-linear-gradient(left, #F6F3F6 , #B4EDD2 20%);
+  background-size: 200% 200%;
+
+ 
+
+  animation: gradient-animation 5s ease infinite;
+  border-radius: 2%;
+  
 }
 @media only screen and (max-width: 600px) {
   .roadmap{
@@ -470,20 +486,26 @@ h2{
 .whitePaper{
   /* border: 1px solid black; */
   height: 46rem;
-  width: 80%;
+  width: 100%;
   padding: 4%;
-  margin-top: 5%;
+  margin-top: 25%;
   margin-left: auto;
   margin-right: auto;
-  background: -webkit-linear-gradient(left, #339642, #004d6e);
-  background-size: 300% 300%;
-  animation: gradient-animation 9s ease infinite;
+  background: -webkit-linear-gradient(left, #F6F3F6 , #B4EDD2 20%);
+  background-size: 200% 200%;
+
+ 
+
+  animation: gradient-animation 5s ease infinite;
+  border-radius: 2%;
 
 }
 p{
-  font-style: inherit;
+  font-style: Inter;
+  font-size: 2rem;
+  box-shadow: 1px 1px 6px #13aef1;
   color: #01abf4;
-  box-shadow: 5px 5px 5px #B4EDD2;
+  
 
 }
 .footer-text {

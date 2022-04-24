@@ -10,6 +10,7 @@ import Burgerstyled from './assets/components/Burger/Burgerstyled';
 
 import Faq from "react-faq-component";
 
+const {ethereum } = window;
 
 
 
@@ -44,16 +45,16 @@ const data = {
 };
 
 const styles = {
-  bgColor: 'rgba(144,191,191)',
+  bgColor: 'transparent',
   titleTextColor: '#F6F3F6',
   rowTitleColor: '#F6F3F6',
   rowContentColor: '#F6F3F6',
-  arrowColor: "black",
+  arrowColor: "snowball",
 };
 
 const config = {
   animate: true,
-  arrowIcon: " ⬇️",
+  arrowIcon: " ⬇",
   tabFocus: true
 };
 
@@ -62,7 +63,7 @@ const TOTAL_MINT_COUNT = 1000;
 
 const App = () => {
   const [currentAccount, setCurrentAccount] = useState("");
-    
+ 
   const checkIfWalletIsConnected = async () => {
     const { ethereum } = window;
     let chainId = await ethereum.request({ method: 'eth_chainId' });
@@ -142,13 +143,15 @@ if (chainId !== rinkebyChainId) {
 
   // Setup our listener.
   const setupEventListener = async () => {
-    // Most of this looks the same as our function askContractToMintNft
+    // 
     const CONTRACT_ADDRESS = "0xFBfbA15309Dd2a48B2c05898326d3F603E794245";
   
     
     try {
       const { ethereum } = window;
-      
+      const connectedContract = new ethers.Contract(CONTRACT_ADDRESS, YachtNFT.abi, signer);
+      const provider = new ethers.providers.Web3Provider(ethereum);
+      const signer = provider.getSigner();
     
       
 
@@ -156,8 +159,7 @@ if (chainId !== rinkebyChainId) {
         // Same stuff again
         const provider = new ethers.providers.Web3Provider(ethereum);
         const signer = provider.getSigner();
-        const connectedContract = new ethers.Contract(CONTRACT_ADDRESS, YachtNFT.abi, signer);
-
+        
         // THIS IS THE MAGIC SAUCE.
         // This will essentially "capture" our event when our contract throws it.
         // If you're familiar with webhooks, it's very similar to that!
@@ -188,6 +190,7 @@ if (chainId !== rinkebyChainId) {
         const provider = new ethers.providers.Web3Provider(ethereum);
         const signer = provider.getSigner();
         const connectedContract = new ethers.Contract(CONTRACT_ADDRESS, YachtNFT.abi, signer);
+        
   
         console.log("Going to pop wallet now to pay gas...")
         let nftTxn = await connectedContract.makeYahctNFT();
@@ -222,9 +225,7 @@ if (chainId !== rinkebyChainId) {
   */
   return (
     <div className="App">
-      <style>
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans:wdth,wght@89.4,572&family=Roboto&display=swap');
-</style>
+      
       
       <div className="container">
       
@@ -251,15 +252,15 @@ if (chainId !== rinkebyChainId) {
         <div>
           <h2 class="header gradient-text" id="roadmap">Roadmap</h2>
           <div className="roadmap">
-              <div className="phase1"><h1>phase 1</h1></div>
-              <div className="phase2"><h1>phase 2</h1></div>
-              <div className="phase3"><h1>phase 3</h1></div>
+              <div className="phase1"><h1>Phase 1</h1></div>
+              <div className="phase2"><h1>Phase 2</h1></div>
+              <div className="phase3"><h1>Phase 3</h1></div>
            
           </div>
           <div className="roadmap">
-              <div className="phase1"><h1>phase 4</h1></div>
-              <div className="phase2"><h1>phase 5</h1></div>
-              <div className="phase3"><h1>phase 6</h1></div>
+              <div className="phase1"><h1>Phase 4</h1></div>
+              <div className="phase2"><h1>Phase 5</h1></div>
+              <div className="phase3"><h1>Phase 6</h1></div>
            
           </div>
           
