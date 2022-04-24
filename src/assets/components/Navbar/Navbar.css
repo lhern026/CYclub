@@ -8,17 +8,38 @@
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
       li{
-          
+          font-size: 1rem;
       }
 
 }
+@media only screen and (max-width: 600px) {
+    li{
+      
+      font-size:  .70rem;
+      
+      text-align: center;
+  
+      
+    }
+    {
+  
+      width: auto;
+      height: 33%;
+      /* border: 1px solid red; */
+      
+      
+      
+      
+    }
+    
+  }
   li{
       list-style-type: none;
      width: 25%;
     font-style: Inter;
       
      padding: 1rem;
-     font-size: 1.3rem ;
+     font-size: 1.3srem ;
      font-style: inherit;
      color: #B4EDD2;
      border-radius: 10% ;
