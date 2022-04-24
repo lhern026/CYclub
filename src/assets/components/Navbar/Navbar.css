@@ -1,29 +1,42 @@
 
   ul{
-      
-      
-      
-     
       display: flex;
-      height: 20%;
+    
   }
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+      li{
+          
+      }
+
+}
   li{
       list-style-type: none;
-      width: 33.33%;
-      margin-left: -3rem;
-      height: 4rem;
-      backdrop-filter: blur(20px);
+     width: 25%;
+    font-style: Inter;
+      
+     padding: 1rem;
+     font-size: 1.3rem ;
+     font-style: inherit;
+     color: #B4EDD2;
+     border-radius: 10% ;
       
       
       
       border-style: groove;
      
   }
-  
+  .navs{
+      border: 1px solid #B4EDD2
+      
+  }
   .navBar{
     backdrop-filter: blur(20px);
-    width: 80%;
-    margin: auto;
+    margin-left: -3rem;
+
+
     
 
   }

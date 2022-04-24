@@ -428,7 +428,7 @@ h2{
   width: 90%;
   margin: auto;
   display: flex;
-  background: -webkit-linear-gradient(left, #F6F3F6 , #B4EDD2 20%);
+  background: -webkit-linear-gradient(left, #4caa7e 33%, #6290C3);
   background-size: 200% 200%;
 
  
@@ -492,7 +492,7 @@ h2{
   margin-top: 25%;
   margin-left: auto;
   margin-right: auto;
-  background: -webkit-linear-gradient(left, #F6F3F6 , #B4EDD2 20%);
+  background: -webkit-linear-gradient(left, #4caa7e 33%, #6290C3);
   background-size: 200% 200%;
 
  

@@ -8,10 +8,10 @@ export default function Navbar(){
         
         <div className='navBar'>
             <ul>
-                <li>logo</li>
-                <li>roadmap</li>
-                <li>faq</li>
-                <li>whtiepaper</li>
+                <li className='navs'>Logo</li>
+                <li className='navs'>Roadmap</li>
+                <li className='navs'>Faq</li>
+                <li className='navs'>Whtiepaper</li>
             </ul>
   </div>
         
