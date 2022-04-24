@@ -229,7 +229,16 @@ if (chainId !== rinkebyChainId) {
       
       
       <div className="container">
-        <Router>
+      <div className='navBar'>
+            <ul>
+                
+                <li className='navs'><a href='#faq'>Logo</a></li>
+                <li className='navs'>Roadmap</li>
+                <li className='navs'>Faq</li>
+                <li className='navs'>Whtiepaper</li>
+            </ul>
+  </div>
+        {/* <Router>
           <Navbar />
           <Routes>
             <Route   />
@@ -237,7 +246,7 @@ if (chainId !== rinkebyChainId) {
             <Route  />
             <Route  />
           </Routes>
-      </Router>
+      </Router> */}
       
         
      
@@ -326,6 +335,7 @@ if (chainId !== rinkebyChainId) {
         {/* <Faqlist></Faqlist> */}
        < h2 className="header gradient-text">FAQ</h2>
         <div className="faqcont">
+          <a name="faq"></a>
         
           <Faq className="faqlist"
                   data={data}

@@ -15,22 +15,13 @@
 @media only screen and (max-width: 600px) {
     li{
       
-      font-size:  .70rem;
+      font-size:  .75rem;
       
       text-align: center;
   
       
     }
-    {
-  
-      width: auto;
-      height: 33%;
-      /* border: 1px solid red; */
-      
-      
-      
-      
-    }
+   
     
   }
   li{
