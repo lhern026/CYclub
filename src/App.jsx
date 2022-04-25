@@ -229,7 +229,7 @@ if (chainId !== rinkebyChainId) {
       
       
       <div className="container">
-      <div className='navBar'>
+        <div className='navBar'>
             <ul>
                 
                 <li className='navs'><a href='#home'>logo</a></li>
@@ -238,7 +238,7 @@ if (chainId !== rinkebyChainId) {
                 <li className='navs'><a href='#faq'>Faq</a></li>
                 <li className='navs'><a href='#whitepaper'>Whitepaper</a></li>
             </ul>
-  </div>
+              </div>
         {/* <Router>
           <Navbar />
           <Routes>
