@@ -27,6 +27,9 @@
 }
 h1{
   color: #12355B;
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
 }
 h2{
   font-size: 6em;
@@ -413,23 +416,37 @@ h2{
   padding: 10rem;
   box-shadow: 5px 5px 5px salmon; 
   margin: auto;
-  backdrop-filter: blur(25px) ;
+ 
   
+}
+a{
+  transition: color .3s ease-in-out, box-shadow .8s ease-in-out;
+  box-shadow: inset 0 0 0 0 #54b3d6;
+}
+a:hover {
+  font-size: 120%;
+  box-shadow: inset 1000px 0 0 0 #54b3d6;
+  color: white;
+}
+h1:hover {
+  
+  box-shadow: inset 100px 0 0 0 #54b3d6;
+  color: white;
 }
 .roadmap div {
   /* border: 1px solid pink; */
-  flex-direction: row;
+ 
   width: 33.33%;
-  border: 1rem double #12355B;
+  
   font-size: 2rem;
-  border-style: groove;
+  
   
 }
  #roadmap{
   
   margin-top: 50%;
   color: #f9e8ac;
-  background-color: red;
+  
   
 }
 .roadmap{

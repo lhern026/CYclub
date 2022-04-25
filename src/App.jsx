@@ -274,16 +274,16 @@ if (chainId !== rinkebyChainId) {
         <div>
           <h2 class="header gradient-text" id="roadmap">Roadmap</h2>
           <div className="roadmap">
-              <div className="phase1"><h1>Phase 1</h1><div className="phases"><p>dd</p></div></div>
-              <div className="phase2"><h1>Phase 2</h1><div className="phases"><p>dd</p></div></div>
-              <div className="phase3"><h1>Phase 3</h1><div className="phases"><p>dd</p></div></div>
+              <div className="phase1"><h1>Phase 1</h1><div className="phases"><p></p></div></div>
+              <div className="phase2"><h1>Phase 2</h1><div className="phases"><p></p></div></div>
+              <div className="phase3"><h1>Phase 3</h1><div className="phases"><p></p></div></div>
            
           </div>
           <div className="roadmap">
               <a name="roadmap"></a>
-              <div className="phase1"><h1>Phase 4</h1><div className="phases"><p>dd</p></div></div>
-              <div className="phase2"><h1>Phase 5</h1><div className="phases"><p>dd</p></div></div>
-              <div className="phase3"><h1>Phase 6</h1><div className="phases"><p>dd</p></div></div>
+              <div className="phase1"><h1>Phase 4</h1><div className="phases"><p></p></div></div>
+              <div className="phase2"><h1>Phase 5</h1><div className="phases"><p></p></div></div>
+              <div className="phase3"><h1>Phase 6</h1><div className="phases"><p></p></div></div>
            
           </div>
           
