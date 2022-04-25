@@ -73,7 +73,35 @@ console.log("Connected to chain " + chainId);
 // String, hex code of the chainId of the Rinkebey test network
 const rinkebyChainId = "0x4"; 
 if (chainId !== rinkebyChainId) {
-	alert("You are not connected to the Rinkeby Test Network!");
+  try{
+    await ethereum.request({
+      method: 'wallet_switchEthereumChain',
+      params: [{ chainId: '0x4' }],
+    });
+  } catch (switchError){
+    // This error code indicates that the chain has not been added to MetaMask.
+    if (switchError.code === 4902) {
+      try {
+        await ethereum.request({
+          method: 'wallet_addEthereumChain',
+          params: [
+            {
+              chainId: '0x4',
+              chainName: 'ETH',
+              rpcUrls: ['https://rinkeby.infura.io/v3/'] /* ... */,
+            },
+          ],
+        });
+      } catch (addError) {
+        // handle "add" error
+      }
+    }
+    // handle other "switch" errors
+  }
+
+
+
+  
 }
     
     if (!ethereum) {
@@ -104,6 +132,7 @@ if (chainId !== rinkebyChainId) {
       
       if (!ethereum) {
         if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+          
 
           // open the deeplink page 
           window.open("https://metamask.app.link/dapp/cy-club.vercel.app/")
@@ -363,7 +392,7 @@ if (chainId !== rinkebyChainId) {
         <div className='navBar'>
             <ul>
                 
-                <li className='navs'>logo</li>
+                <li className='navs'><a href='#home'>logo</a></li>
                 <li className='navs'><a href='#roadmap'>Roadmap</a></li>
                 <li className='navs'><a href='#faq'>Faq</a></li>
                 <li className='navs'><a href='#whitepaper'>Whitepaper</a></li>
