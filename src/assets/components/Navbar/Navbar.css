@@ -3,6 +3,10 @@
       display: flex;
     
   }
+  li a{ 
+      color: #B4EDD2;
+      text-decoration: none;
+  }
   @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
@@ -30,7 +34,7 @@
     font-style: Inter;
       
      padding: 1rem;
-     font-size: 1.3srem ;
+     font-size: 1.5rem ;
      font-style: inherit;
      color: #B4EDD2;
      border-radius: 10% ;
@@ -41,14 +45,30 @@
      
   }
   .navs{
-      border: 1px solid #B4EDD2
+      border: 1px solid #B4EDD2;
+      height: 4rem;
       
   }
+  
   .navBar{
     backdrop-filter: blur(20px);
     margin-left: -3rem;
+    position:   sticky;
+    
 
 
     
 
+  }
+  @media only screen and (max-width: 600px) {
+    li{
+      
+      font-size:  .75rem;
+      
+      text-align: center;
+  
+      
+    }
+   
+    
   }

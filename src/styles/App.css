@@ -54,7 +54,7 @@ h2{
   
   margin: auto;
   margin-top: 10%;
-  padding: 7rem;
+  padding: 2rem;
   background: -webkit-linear-gradient(left, #4caa7e 33%, #6290C3);
   background-size: 200% 200%;
   animation: gradient-animation 9s ease infinite;
@@ -407,11 +407,21 @@ h2{
   animation: gradient-animation 4s ease infinite;
   margin-right: 15px;
 }
+.phases {
+  
+  border: 1px solid black !important;
+  padding: 10rem;
+  box-shadow: 5px 5px 5px salmon; 
+  margin: auto;
+  backdrop-filter: blur(25px) ;
+  
+}
 .roadmap div {
   /* border: 1px solid pink; */
   flex-direction: row;
   width: 33.33%;
   border: 1rem double #12355B;
+  font-size: 2rem;
   border-style: groove;
   
 }
@@ -425,10 +435,10 @@ h2{
 .roadmap{
   /* border: 1px solid red; */
   height: 40rem;
-  width: 90%;
+  width: 100%;
   margin: auto;
   display: flex;
-  background: -webkit-linear-gradient(left, #4caa7e 33%, #6290C3);
+  background: -webkit-linear-gradient(left, #4caa7e 33%, #6290C3 77%);
   background-size: 200% 200%;
 
  
@@ -449,6 +459,7 @@ h2{
 
     width: auto;
     height: 33%;
+    
     /* border: 1px solid red; */
     
     

@@ -55,7 +55,7 @@ const styles = {
 
 const config = {
   animate: true,
-  arrowIcon: " ⬇",
+  arrowIcon: " ↓",
   tabFocus: true
 };
 
@@ -232,10 +232,11 @@ if (chainId !== rinkebyChainId) {
       <div className='navBar'>
             <ul>
                 
-                <li className='navs'>logo</li>
+                <li className='navs'><a href='#home'>logo</a></li>
+                <a name="home"></a>
                 <li className='navs'><a href='#roadmap'>Roadmap</a></li>
                 <li className='navs'><a href='#faq'>Faq</a></li>
-                <li className='navs'><a href='#whitepaper'>Whtiepaper</a></li>
+                <li className='navs'><a href='#whitepaper'>Whitepaper</a></li>
             </ul>
   </div>
         {/* <Router>
@@ -252,11 +253,13 @@ if (chainId !== rinkebyChainId) {
      
         {/* <Navbar /> */}
         <div className="header-container">
+        
           
           
           
           
           <div className="firstHeader">
+         
             <h1 className="header gradient-text">Crypto <br></br > <span id="yacht">Yacht</span> <br></br> Club</h1>
           </div>
           {currentAccount === "" ? (
@@ -271,16 +274,16 @@ if (chainId !== rinkebyChainId) {
         <div>
           <h2 class="header gradient-text" id="roadmap">Roadmap</h2>
           <div className="roadmap">
-              <div className="phase1"><h1>Phase 1</h1></div>
-              <div className="phase2"><h1>Phase 2</h1></div>
-              <div className="phase3"><h1>Phase 3</h1></div>
+              <div className="phase1"><h1>Phase 1</h1><div className="phases"><p>dd</p></div></div>
+              <div className="phase2"><h1>Phase 2</h1><div className="phases"><p>dd</p></div></div>
+              <div className="phase3"><h1>Phase 3</h1><div className="phases"><p>dd</p></div></div>
            
           </div>
           <div className="roadmap">
               <a name="roadmap"></a>
-              <div className="phase1"><h1>Phase 4</h1></div>
-              <div className="phase2"><h1>Phase 5</h1></div>
-              <div className="phase3"><h1>Phase 6</h1></div>
+              <div className="phase1"><h1>Phase 4</h1><div className="phases"><p>dd</p></div></div>
+              <div className="phase2"><h1>Phase 5</h1><div className="phases"><p>dd</p></div></div>
+              <div className="phase3"><h1>Phase 6</h1><div className="phases"><p>dd</p></div></div>
            
           </div>
           
@@ -356,7 +359,17 @@ if (chainId !== rinkebyChainId) {
 
           
         </div>
-        <div className="footer-container">
+        
+        <div className='navBar'>
+            <ul>
+                
+                <li className='navs'>logo</li>
+                <li className='navs'><a href='#roadmap'>Roadmap</a></li>
+                <li className='navs'><a href='#faq'>Faq</a></li>
+                <li className='navs'><a href='#whitepaper'>Whitepaper</a></li>
+            </ul>
+  
+          
           
           
           
