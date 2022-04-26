@@ -256,18 +256,25 @@ if (chainId !== rinkebyChainId) {
   return (
     <div className="App">
       
-      
+      <div class="menu-wrap">
+    <input type="checkbox" class="toggler"/>
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="#home">Logo</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#faq">Faq</a></li>
+            <li><a href="#whitepaper">Whitepaper</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
       <div className="container">
-        <div className='navBar'>
-            <ul>
-                
-                <li className='navs'><a href='#home'>logo</a></li>
-                <a name="home"></a>
-                <li className='navs'><a href='#roadmap'>Roadmap</a></li>
-                <li className='navs'><a href='#faq'>Faq</a></li>
-                <li className='navs'><a href='#whitepaper'>Whitepaper</a></li>
-            </ul>
-              </div>
+        
+        
         {/* <Router>
           <Navbar />
           <Routes>
@@ -382,30 +389,12 @@ if (chainId !== rinkebyChainId) {
         <div className="whitePaper">
           <h2 className="header gradient-text">Whitepaper</h2>
           <a name="whitepaper"></a>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure 
-            aperiam reprehenderit tenetur aliquid, iusto illum possimus voluptatibus animi 
-            odio deleniti necessitatibus quos rem autem, quidem, fugiat at porro nemo nisi.</p>
+          <p></p>
 
           
         </div>
         
-        <div className='navBar'>
-            <ul>
-                
-                <li className='navs'><a href='#home'>logo</a></li>
-                <li className='navs'><a href='#roadmap'>Roadmap</a></li>
-                <li className='navs'><a href='#faq'>Faq</a></li>
-                <li className='navs'><a href='#whitepaper'>Whitepaper</a></li>
-            </ul>
-  
-          
-          
-          
-          
-          
-          
-          
-        </div>
+        
       </div>
     </div>
   );
