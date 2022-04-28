@@ -547,62 +547,23 @@ h2{
     
     /* border: 1px solid pink; */
   }
-  .boat {
-    
-  
-    
-    top: 106% !important;
-    
-    
-    
-  }
  
-    nav{
-      position: fixed;
-      height: 150vh;
-      
+ 
     
-  }
-
   
 }
-#hull {
-  
-  border: solid;
-  border-color: #F9DB6D transparent transparent transparent;
-  border-width: 20px 50px 0px 30px;
-  height: 0px;
-  width: 0px;
-  margin-top: -180px;
-  margin-left: -180px;
-}
 
-#mainsail {
-  background: transparent;
-  border: solid;
-  border-color: transparent #F6F3F6 transparent transparent;
-  border-width: 50px 20px 0 15px;
-  margin-top: -232px;
-  margin-left: -187px;
-}
 
-#jib {
-  background: transparent;
-  border: solid;
-  border-color: transparent transparent transparent peachpuff;
-  border-width: 45px 30px 0 30px;
-  margin-top: -227px;
-  margin-left: -150px;
-}
+
 
 @keyframes sailing {
   0%{transform: translateX(-0px)}
   100%{transform: translateX(300px)}
 }
 .cta-button {
-  height: 45px;
+  height: 5%;
   border: 0;
-  width: auto;
+  width: 16%;
   padding-left: 40px;
   padding-right: 40px;
   border-radius: 5px;
@@ -682,6 +643,7 @@ h1:hover {
   margin: auto;
   display: flex;
   background: -webkit-linear-gradient(left, #4caa7e 33%, #6290C3 77%);
+  z-index: auto;
   background-size: 200% 200%;
 
  

@@ -336,8 +336,9 @@ if (chainId !== rinkebyChainId) {
               />
        
         </div>
+        <h2 className="header gradient-text">Whitepaper</h2>
         <div className="whitePaper">
-          <h2 className="header gradient-text">Whitepaper</h2>
+
           <a name="whitepaper"></a>
           <p></p>
 
