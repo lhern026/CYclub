@@ -305,7 +305,7 @@ if (chainId !== rinkebyChainId) {
           )}
         </div>
         <div>
-          <h2 class="header gradient-text" id="roadmap">Roadmap</h2>
+          <h2  id="roadmap">Roadmap</h2>
           <div className="roadmap">
               <div className="phase1"><h1>Phase 1</h1><div className="phases"><p></p></div></div>
               <div className="phase2"><h1>Phase 2</h1><div className="phases"><p></p></div></div>
@@ -324,7 +324,7 @@ if (chainId !== rinkebyChainId) {
               </div>
         {/* <Faqlist></Faqlist> */}
         <a name="faq"></a>
-       < h2 className="header gradient-text">FAQ</h2>
+       < h2 >FAQ</h2>
        
         <div className="faqcont">
           
@@ -336,7 +336,7 @@ if (chainId !== rinkebyChainId) {
               />
        
         </div>
-        <h2 className="header gradient-text">Whitepaper</h2>
+        <h2 >Whitepaper</h2>
         <div className="whitePaper">
 
           <a name="whitepaper"></a>

@@ -249,6 +249,7 @@ h1{
 h2{
   font-size: 6em;
   backdrop-filter: blur(6px);
+  color: #0A1F0D;
   
   
 }
@@ -561,16 +562,16 @@ h2{
   100%{transform: translateX(300px)}
 }
 .cta-button {
-  height: 5%;
+  height: 5rem;
   border: 0;
   width: 16%;
   padding-left: 40px;
   padding-right: 40px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: bold;
-  color: white;
+  color: snow;
 }
 
 
@@ -632,7 +633,7 @@ h1:hover {
  #roadmap{
   
   margin-top: 50%;
-  color: #f9e8ac;
+  
   
   
 }
@@ -645,6 +646,7 @@ h1:hover {
   background: -webkit-linear-gradient(left, #4caa7e 33%, #6290C3 77%);
   z-index: auto;
   background-size: 200% 200%;
+  scroll-snap-stop: always;
 
  
 
