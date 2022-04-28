@@ -587,22 +587,18 @@ h2{
   animation: gradient-animation 4s ease infinite;
   margin-right: 15px;
 }
-.phases {
-  
-  
-  
-  height: 10em;
 
-  margin: auto;
- 
-  
-}
 @media only screen and (max-width: 600px) {
-  .phases{
-    
-    border:   1px solid white !important;
-    margin: auto !important;
+  h2{
+    font-size: 5rem;
   }
+  .cta-button {
+ 
+    font-size: .8rem;
+    
+  }
+ 
+ 
 
 }
 
@@ -646,7 +642,7 @@ h1:hover {
   background: -webkit-linear-gradient(left, #4caa7e 33%, #6290C3 77%);
   z-index: auto;
   background-size: 200% 200%;
-  scroll-snap-stop: always;
+  
 
  
 
@@ -666,6 +662,7 @@ h1:hover {
 
     width: auto;
     height: 33%;
+    
     
     /* border: 1px solid red; */
     
@@ -696,12 +693,7 @@ h1:hover {
   width: 35px;
   height: 35px;
 }
-.yacht{
-  width: 50%;
-  height: 30%;
-  margin: auto;
-  opacity: .5;
-}
+
 .whitePaper{
   /* border: 1px solid black; */
   height: 46rem;
