@@ -6,7 +6,7 @@
 }
 
 * {
-  margin: 0;
+
   padding: 0;
   box-sizing: border-box;
 }
@@ -215,7 +215,7 @@ body {
 .App {
   height: 100vh;
   box-sizing: border-box;
-  background: url(https://images.unsplash.com/photo-1544306094-e2dcf9479da3)  no-repeat;
+  background: url(../../public/background.jpeg)  no-repeat;
   background-attachment: fixed; 
   background-size: 200% 200%;
   align-items: center;
