@@ -7,14 +7,11 @@ import { ethers } from "ethers";
 import YachtNFT from './utils/YachtNFT.json';
 import mintcounter from './assets/components/mintcounter/mintcounter';
 import Navbar from './assets/components/Navbar/Navbar';
-import Burgerstyled from './assets/components/Burger/Burgerstyled';
+
 
 import Faq from "react-faq-component";
 
 const {ethereum } = window;
-
-
-
 
 const data = {
   title: "  ",
@@ -323,54 +320,7 @@ if (chainId !== rinkebyChainId) {
            
           </div>
           
-          <div className="containerOcean">
-                
-                <div class = "ocean">
-                  <span class = "waves" id ="wave1"></span>
-                  <span class = "waves" id ="wave2"></span>
-                  <span class = "waves" id ="wave3"></span>
-                  <span class = "waves" id ="wave4"></span>
-                  <span class = "waves" id ="wave5"></span>
-                  <span class = "waves" id ="wave6"></span> 
-                  <span class = "waves" id ="wave7"></span>
-                  <span class = "waves" id ="wave8"></span>
-                  <span class = "waves" id ="wave9"></span>
-                  <span class = "waves" id ="wave10"></span>
-                  <span class = "waves" id ="wave11"></span>
-                  <span class = "waves" id ="wave12"></span>
-                  <span class = "waves" id ="wave13"></span>
-                  <span class = "waves" id ="wave14"></span>
-                  <span class = "waves" id ="wave15"></span>
-                  <span class = "waves" id ="wave16"></span>
-                  <span class = "waves" id ="wave17"></span>
-                  <span class = "waves" id ="wave18"></span> 
-                  <span class = "waves" id ="wave19"></span>
-                  <span class = "waves" id ="wave20"></span>
-                  <span class = "waves" id ="wave21"></span>
-                  <span class = "waves" id ="wave22"></span>
-                  <span class = "waves" id ="wave23"></span>
-                  <span class = "waves" id ="wave24"></span> 
-                  <span class = "waves" id ="wave25"></span>
-                  <span class = "waves" id ="wave26"></span>
-                  <span class = "waves" id ="wave27"></span>
-                  <span class = "waves" id ="wave28"></span>
-                  <span class = "waves" id ="wave29"></span>
-                  <span class = "waves" id ="wave30"></span> 
-                  <span class = "waves" id ="wave31"></span>
-                  <span class = "waves" id ="wave32"></span>
-                  <span class = "waves" id ="wave33"></span>
-                  <span class = "waves" id ="wave34"></span>
-                  <span class = "waves" id ="wave35"></span>
-                  <span class = "waves" id ="wave36"></span> 
-                  <span class = "waves" id ="wave37"></span>
-                  <span class = "waves" id ="wave38"></span>
-                  <span class = "waves" id ="wave39"></span>
-                  <span class = "waves" id ="wave40"></span>
-                 
-                  
-                    </div>
-                    <div class = "sky"></div>
-              </div>
+        
               </div>
         {/* <Faqlist></Faqlist> */}
         <a name="faq"></a>

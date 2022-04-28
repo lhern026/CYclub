@@ -215,7 +215,7 @@ body {
 .App {
   height: 100vh;
   box-sizing: border-box;
-  background: url(../../public/background.jpeg)  no-repeat;
+  background: url('../../public/background.jpeg')  no-repeat;
   background-attachment: fixed; 
   background-size: 200% 200%;
   align-items: center;
@@ -230,10 +230,10 @@ body {
 .firstHeader{
   /* border: 1px solid beige; */
   margin-top: 10%;
-  width: 90%;
-  margin-left: 5%;
+  width: 100%;
+  
  
-  font-size: 3em;
+  font-size: 2.5em;
  
   backdrop-filter: blur(20px);
   
@@ -627,10 +627,10 @@ h2{
 }
 .phases {
   
-  border: 1px solid black !important;
-  padding: 1em; 
+  
+  
   height: 10em;
-  box-shadow: 5px 5px 5px salmon; 
+
   margin: auto;
  
   
