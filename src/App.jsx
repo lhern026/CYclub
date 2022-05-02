@@ -114,7 +114,7 @@ if (chainId !== rinkebyChainId) {
       const account = accounts[0];
       console.log("Found an authorized account:", account);
       setCurrentAccount(account);
-      setupEventListener()
+      setupEventListener();
     } else {
       console.log("No authorized account found");
     }
@@ -301,9 +301,14 @@ if (chainId !== rinkebyChainId) {
           {currentAccount === "" ? (
             renderNotConnectedContainer()
           ) : (
+            <div>
             <button onClick={askContractToMintNft} className="cta-button connect-wallet-button">
+              
               Mint NFT 
             </button>
+            
+            </div>
+            
            
           )}
         </div>
