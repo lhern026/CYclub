@@ -149,9 +149,12 @@
 
 @media (max-width: 767.98px) {
   .timeline::after {
-    left: 90px;
+    left: 2rem;
   }
-
+  .content{
+    right: 5rem;
+    margin: auto;
+  }
   .container {
     width: 100%;
     padding-left: 120px;
@@ -164,31 +167,27 @@
 
   .container.left::after, 
   .container.right::after {
-    left: 82px;
+    left: 1.4rem;
   }
 
   .container.left::before,
   .container.right::before {
-    left: 100px;
-    border-color: transparent #006E51 transparent transparent;
+    left: 1.4rem;
+    
   }
 
-  .container.left .date,
-  .container.right .date {
-    right: auto;
-    left: 15px;
-  }
 
   .container.left .icon,
   .container.right .icon {
-    right: auto;
-    left: 146px;
+    left: 4rem;
+    
   }
 
   .container.left .content,
   .container.right .content {
-    padding: 30px 30px 30px 90px;
-    border-radius: 500px 0 0 500px;
+    padding: 10%;
+    right: inherit;
+    border-radius: 10%;
   }
 }
 
