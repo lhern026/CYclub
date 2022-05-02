@@ -7,7 +7,7 @@ import { ethers } from "ethers";
 import YachtNFT from './utils/YachtNFT.json';
 import mintcounter from './assets/components/mintcounter/mintcounter';
 import Navbar from './assets/components/Navbar/Navbar';
-
+import { motion } from 'framer-motion';
 
 import Faq from "react-faq-component";
 
@@ -145,7 +145,7 @@ if (chainId !== rinkebyChainId) {
       console.log("Connected", accounts[0]);
       setCurrentAccount(accounts[0]); 
 
-      setupEventListener()
+      setupEventListener();
         
       }
 
@@ -193,7 +193,9 @@ if (chainId !== rinkebyChainId) {
         connectedContract.on("NewYachtNFTMinted", (from, tokenId) => {
           console.log(from, tokenId.toNumber())
           
-          alert(`Hey there! We've minted your NFT and sent it to your wallet. It may be blank right now. It can take a max of 10 min to show up on OpenSea. Here's the link: https://testnets.opensea.io/assets/${CONTRACT_ADDRESS}/${tokenId.toNumber()}`)
+          alert(`Hey there! We've minted your NFT and sent it to your wallet. It may be blank right now. It can take a max of 10 min to show up on OpenSea. Here's the link: https://testnets.opensea.io/assets/${CONTRACT_ADDRESS}/${tokenId.toNumber()}`);
+
+          console.log('yo');
         });
 
         console.log("Setup event listener!")
@@ -222,11 +224,12 @@ if (chainId !== rinkebyChainId) {
         console.log("Going to pop wallet now to pay gas...")
         let nftTxn = await connectedContract.makeYahctNFT();
   
-        console.log("Mining...please wait.")
+        alert("Mining...please wait.")
         await nftTxn.wait();
         
         console.log(`Mined, see transaction: https://rinkeby.etherscan.io/tx/${nftTxn.hash}`);
-        console.log(`here is ur link: https://testnets.opensea.io/assets/${CONTRACT_ADDRESS}/`)
+        console.log(`here is ur link: https://testnets.opensea.io/assets/${CONTRACT_ADDRESS}/`);
+        
   
       } else {
         console.log("Ethereum object doesn't exist!");
@@ -299,7 +302,7 @@ if (chainId !== rinkebyChainId) {
             renderNotConnectedContainer()
           ) : (
             <button onClick={askContractToMintNft} className="cta-button connect-wallet-button">
-              Mint NFT
+              Mint NFT 
             </button>
            
           )}

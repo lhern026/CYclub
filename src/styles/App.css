@@ -22,7 +22,7 @@
   content: '';
   position: absolute;
   width: 2px;
-  background: #006E51;
+  background: #0A1F0D;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -104,7 +104,7 @@
   height: 40px;
   padding: 9px 0;
   top: calc(50% - 20px);
-  background: #F6D155;
+  background: #F6F3F6;
   border: 2px solid #006E51;
   border-radius: 40px;
   text-align: center;
@@ -123,7 +123,7 @@
 
 .container .content {
   padding: 30px 90px 30px 30px;
-  background: #F6D155;
+  background: #6290C3;
   position: relative;
   border-radius: 0 500px 500px 0;
 }
@@ -135,16 +135,17 @@
 
 .container .content h2 {
   margin: 0 0 10px 0;
-  font-size: 18px;
-  font-weight: normal;
-  color: #006E51;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #0A1F0D;
 }
 
 .container .content p {
   margin: 0;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 22px;
-  color: #000000;
+  color: #F6F3F6;
+
 }
 
 @media (max-width: 767.98px) {
